@@ -26,6 +26,7 @@
     <property name="plugin.version" value="${build.number}"/>
   </target>
 
+  <target name="test" depends="all" description="Same as 'all'"/>
   <target name="dist" depends="all" description="Same as 'all'"/>
   <target name="all" depends="check.teamcitydistribution,teamcitysampleplugin.all,package"
           description="Invoke this to build your plugin"/>
